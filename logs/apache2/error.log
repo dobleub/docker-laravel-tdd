@@ -1,0 +1,48 @@
+AH00112: Warning: DocumentRoot [/var/www/public] does not exist
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 192.168.32.2. Set the 'ServerName' directive globally to suppress this message
+[Tue Aug 07 15:41:43.503807 2018] [mpm_event:notice] [pid 14:tid 140092337706176] AH00489: Apache/2.4.25 (Debian) configured -- resuming normal operations
+[Tue Aug 07 15:41:43.505104 2018] [core:notice] [pid 14:tid 140092337706176] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+AH00112: Warning: DocumentRoot [/var/www/public] does not exist
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 192.168.32.2. Set the 'ServerName' directive globally to suppress this message
+[Tue Aug 07 15:43:22.992416 2018] [mpm_event:notice] [pid 14:tid 140362946426048] AH00489: Apache/2.4.25 (Debian) configured -- resuming normal operations
+[Tue Aug 07 15:43:22.992934 2018] [core:notice] [pid 14:tid 140362946426048] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+AH00112: Warning: DocumentRoot [/var/www/public] does not exist
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 192.168.32.2. Set the 'ServerName' directive globally to suppress this message
+[Tue Aug 07 15:57:43.013372 2018] [mpm_event:notice] [pid 14:tid 140710829491392] AH00489: Apache/2.4.25 (Debian) configured -- resuming normal operations
+[Tue Aug 07 15:57:43.014205 2018] [core:notice] [pid 14:tid 140710829491392] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+AH00112: Warning: DocumentRoot [/var/www/public] does not exist
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 192.168.32.2. Set the 'ServerName' directive globally to suppress this message
+[Tue Aug 07 15:58:50.750324 2018] [mpm_event:notice] [pid 14:tid 140626719290560] AH00489: Apache/2.4.25 (Debian) configured -- resuming normal operations
+[Tue Aug 07 15:58:50.751122 2018] [core:notice] [pid 14:tid 140626719290560] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+[Tue Aug 07 16:07:21.122416 2018] [proxy:error] [pid 16:tid 140626515437312] (2)No such file or directory: AH02454: FCGI: attempt to connect to Unix domain socket /run/php/php7.1-fpm.sock (*) failed
+[Tue Aug 07 16:07:21.122752 2018] [proxy_fcgi:error] [pid 16:tid 140626515437312] [client 192.168.99.1:61660] AH01079: failed to make connection to backend: httpd-UDS
+[Tue Aug 07 16:07:27.188785 2018] [proxy:error] [pid 16:tid 140626523830016] (2)No such file or directory: AH02454: FCGI: attempt to connect to Unix domain socket /run/php/php7.1-fpm.sock (*) failed
+[Tue Aug 07 16:07:27.189012 2018] [proxy_fcgi:error] [pid 16:tid 140626523830016] [client 192.168.99.1:61670] AH01079: failed to make connection to backend: httpd-UDS
+[Tue Aug 07 16:08:08.680083 2018] [proxy:error] [pid 16:tid 140626473473792] (2)No such file or directory: AH02454: FCGI: attempt to connect to Unix domain socket /run/php/php7.1-fpm.sock (*) failed
+[Tue Aug 07 16:08:08.681377 2018] [proxy_fcgi:error] [pid 16:tid 140626473473792] [client 192.168.99.1:61757] AH01079: failed to make connection to backend: httpd-UDS
+[Tue Aug 07 16:08:12.808179 2018] [proxy:error] [pid 15:tid 140626431510272] (2)No such file or directory: AH02454: FCGI: attempt to connect to Unix domain socket /run/php/php7.1-fpm.sock (*) failed
+[Tue Aug 07 16:08:12.808435 2018] [proxy_fcgi:error] [pid 15:tid 140626431510272] [client 192.168.99.1:61758] AH01079: failed to make connection to backend: httpd-UDS
+[Tue Aug 07 16:08:15.746513 2018] [proxy:error] [pid 16:tid 140626490259200] (2)No such file or directory: AH02454: FCGI: attempt to connect to Unix domain socket /run/php/php7.1-fpm.sock (*) failed
+[Tue Aug 07 16:08:15.746672 2018] [proxy_fcgi:error] [pid 16:tid 140626490259200] [client 192.168.99.1:61759] AH01079: failed to make connection to backend: httpd-UDS
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 192.168.32.2. Set the 'ServerName' directive globally to suppress this message
+[Tue Aug 07 16:11:22.364232 2018] [mpm_event:notice] [pid 14:tid 140512086127808] AH00489: Apache/2.4.25 (Debian) configured -- resuming normal operations
+[Tue Aug 07 16:11:22.364850 2018] [core:notice] [pid 14:tid 140512086127808] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+[Tue Aug 07 16:13:28.825575 2018] [proxy:error] [pid 16:tid 140511960229632] (2)No such file or directory: AH02454: FCGI: attempt to connect to Unix domain socket /run/php/php7.1-fpm.sock (*) failed
+[Tue Aug 07 16:13:28.825851 2018] [proxy_fcgi:error] [pid 16:tid 140511960229632] [client 192.168.99.1:62250] AH01079: failed to make connection to backend: httpd-UDS
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 192.168.32.2. Set the 'ServerName' directive globally to suppress this message
+[Tue Aug 07 16:17:50.826708 2018] [mpm_event:notice] [pid 14:tid 139894924219584] AH00489: Apache/2.4.25 (Debian) configured -- resuming normal operations
+[Tue Aug 07 16:17:50.827238 2018] [core:notice] [pid 14:tid 139894924219584] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+[Tue Aug 07 16:18:05.327054 2018] [proxy:error] [pid 15:tid 139894831892224] (2)No such file or directory: AH02454: FCGI: attempt to connect to Unix domain socket /run/php/php7.1-fpm.sock (*) failed
+[Tue Aug 07 16:18:05.327392 2018] [proxy_fcgi:error] [pid 15:tid 139894831892224] [client 192.168.99.1:62749] AH01079: failed to make connection to backend: httpd-UDS
+[Tue Aug 07 16:19:51.263527 2018] [proxy:error] [pid 16:tid 139894651311872] (2)No such file or directory: AH02454: FCGI: attempt to connect to Unix domain socket /run/php/php7.1-fpm.sock (*) failed
+[Tue Aug 07 16:19:51.263816 2018] [proxy_fcgi:error] [pid 16:tid 139894651311872] [client 192.168.99.1:62951] AH01079: failed to make connection to backend: httpd-UDS
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 192.168.32.2. Set the 'ServerName' directive globally to suppress this message
+[Tue Aug 07 16:20:34.994808 2018] [mpm_event:notice] [pid 14:tid 140296017695936] AH00489: Apache/2.4.25 (Debian) configured -- resuming normal operations
+[Tue Aug 07 16:20:34.995818 2018] [core:notice] [pid 14:tid 140296017695936] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 192.168.32.2. Set the 'ServerName' directive globally to suppress this message
+[Tue Aug 07 17:09:11.249576 2018] [mpm_event:notice] [pid 14:tid 140005599225024] AH00489: Apache/2.4.25 (Debian) configured -- resuming normal operations
+[Tue Aug 07 17:09:11.250037 2018] [core:notice] [pid 14:tid 140005599225024] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 192.168.32.2. Set the 'ServerName' directive globally to suppress this message
+[Tue Aug 07 18:06:15.246180 2018] [core:warn] [pid 7] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Tue Aug 07 18:06:15.263311 2018] [mpm_prefork:notice] [pid 7] AH00163: Apache/2.4.25 (Debian) configured -- resuming normal operations
+[Tue Aug 07 18:06:15.263518 2018] [core:notice] [pid 7] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'

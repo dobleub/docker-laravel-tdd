@@ -32,6 +32,7 @@ RUN wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
     echo "deb https://packages.sury.org/php/ stretch main" > /etc/apt/sources.list.d/php.list && \
     apt-get update -qq && apt-get -y -qq upgrade && \
     apt-get install --no-install-recommends --no-install-suggests -yqq \
+    	libapache2-mod-php7.1 \
         php7.1-apc \
         php7.1-apcu \
         php7.1-bz2 \
@@ -41,7 +42,6 @@ RUN wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
         php7.1-cli \
         php7.1-ctype \
         php7.1-curl \
-        php7.1-fpm \
         php7.1-geoip \
         php7.1-gettext \
         php7.1-gd \
@@ -66,7 +66,6 @@ RUN wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
 
 # Enable memcache and php-fmp 
 RUN apt-get install -yqq pkg-config mailutils libpng-dev zlib1g-dev libmemcached-dev
-ADD .config/php/php-fmp.conf /etc/php/7.1/fpm/php-fpm.conf
 
 # Setup Composer | prestissimo to speed up composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer && \
@@ -80,13 +79,10 @@ RUN npm install -g bower
 # PHP Timezone
 RUN echo "${TZ}" | tee /etc/timezone && \
 	dpkg-reconfigure --frontend noninteractive tzdata && \
-	echo "date.timezone = \"${TZ}\";" > /etc/php/5.6/cli/conf.d/timezone.ini
+	echo "date.timezone = \"${TZ}\";" > /etc/php/7.1/cli/conf.d/timezone.ini
 
 # Cleanup apt
 RUN apt-get -q autoclean
-
-# Enable PHP5 mod
-RUN phpenmod uploadprogress redis solr
 
 # Apache enviroment variables
 ENV APACHE_RUN_USER www-data
@@ -97,8 +93,8 @@ ENV APACHE_PID_FILE /var/run/apache2.pid
 
 # Update the default Apache site with custom config
 ADD .config/app/apache-config.conf /etc/apache2/sites-enabled/000-default.conf
-RUN a2enmod rewrite proxy_fcgi setenvif
-RUN a2enconf php7.1-fpm
+RUN a2enmod rewrite proxy_fcgi setenvif php7.1
+RUN service apache2 restart
 
 # Working dir
 WORKDIR /var/www
@@ -106,9 +102,9 @@ COPY app /var/www
 # Update dependencies
 # RUN composer install && npm install && bower install --allow-root
 
-# RUN usermod -u 1000 www-data && \
-#	chown -R www-data:www-data /var/www && \
-#	chmod -R 775 /var/www/storage
+RUN usermod -u 1000 www-data && \
+	chown -R www-data:www-data /var/www && \
+	chmod -R 775 /var/www/storage
 
 # RUN /usr/sbin/apache2ctl restart
 CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
