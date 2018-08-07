@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  app:
+    container_name: social
+    build:
+      context: ./
+      dockerfile: app.dockerfile
+    volumes:
+      - ./app:/var/www
+      - ./logs/apache2:/var/log/apache2
+    ports:
+      - "8800:80"
+
