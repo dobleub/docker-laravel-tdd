@@ -39,3 +39,5 @@
 192.168.99.1 - - [07/Aug/2018:18:06:35 -0500] "GET / HTTP/1.1" 200 1803 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
 192.168.99.1 - - [07/Aug/2018:18:06:42 -0500] "GET /favicon.ico HTTP/1.1" 200 295 "http://localdock.telmex.com:8800/" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
 192.168.99.1 - - [07/Aug/2018:18:06:49 -0500] "GET / HTTP/1.1" 200 1803 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+192.168.99.1 - - [07/Aug/2018:18:10:04 -0500] "GET / HTTP/1.1" 200 1795 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+192.168.99.1 - - [07/Aug/2018:18:10:06 -0500] "GET /favicon.ico HTTP/1.1" 200 295 "http://localdock.telmex.com:8800/" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
