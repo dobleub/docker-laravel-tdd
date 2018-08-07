@@ -99,6 +99,7 @@ RUN service apache2 restart
 # Working dir
 WORKDIR /var/www
 COPY app /var/www
+RUN ln -s /var/www/vendor/bin/phpunit /usr/bin/phpunit
 # Update dependencies
 # RUN composer install && npm install && bower install --allow-root
 
