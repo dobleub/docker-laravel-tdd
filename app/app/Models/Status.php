@@ -6,5 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Status extends Model
 {
-    //
+    // Disable mass assignment protection
+    protected $guarded = [];
+
+ 	
 }
