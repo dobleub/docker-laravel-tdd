@@ -76,6 +76,12 @@ RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
 RUN apt-get install -yqq nodejs
 RUN npm install -g bower
 
+# Installing browser
+RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub |  apt-key add - && \
+    sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list' && \
+    apt-get update && apt-get install -y google-chrome-stable && \
+    apt-get install -y xvfb
+
 # PHP Timezone
 RUN echo "${TZ}" | tee /etc/timezone && \
 	dpkg-reconfigure --frontend noninteractive tzdata && \
@@ -94,7 +100,6 @@ ENV APACHE_PID_FILE /var/run/apache2.pid
 # Update the default Apache site with custom config
 ADD .config/app/apache-config.conf /etc/apache2/sites-enabled/000-default.conf
 RUN a2enmod rewrite proxy_fcgi setenvif php7.1
-RUN service apache2 restart
 
 # Working dir
 WORKDIR /var/www
@@ -110,4 +115,4 @@ RUN usermod -u 1000 www-data && \
 # RUN /usr/sbin/apache2ctl restart
 CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
 # Expose
-EXPOSE 80
+EXPOSE 80 9515

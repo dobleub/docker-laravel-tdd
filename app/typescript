@@ -1,0 +1,26 @@
+Script started on Mon Aug 13 17:13:44 2018
+PHPUnit 7.3.1 by Sebastian Bergmann and contributors.
+
+[31;1mE[0m                                                                   1 / 1 (100%)
+
+Time: 2.54 minutes, Memory: 10.00MB
+
+There was 1 error:
+
+1) Tests\Browser\UserCanCreateStatusesTest::users_can_create_statuses
+Facebook\WebDriver\Exception\WebDriverCurlException: Curl error thrown for http POST to /session with params: {"desiredCapabilities":{"browserName":"chrome","platform":"ANY","chromeOptions":{"binary":"","args":["--disable-gpu","--headless"]}}}
+
+Operation timed out after 30000 milliseconds with 0 bytes received
+
+/var/www/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php:292
+/var/www/vendor/facebook/webdriver/lib/Remote/RemoteWebDriver.php:126
+/var/www/tests/DuskTestCase.php:39
+/var/www/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:192
+/var/www/vendor/laravel/framework/src/Illuminate/Support/helpers.php:768
+/var/www/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:193
+/var/www/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:93
+/var/www/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:64
+/var/www/tests/Browser/UserCanCreateStatusesTest.php:23
+
+[37;41mERRORS![0m
+[37;41mTests: 1[0m[37;41m, Assertions: 0[0m[37;41m, Errors: 1[0m[37;41m.[0m
